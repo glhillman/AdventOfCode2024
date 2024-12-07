@@ -74,6 +74,11 @@ internal class DayClass
     {
         long rslt = -1;
 
+        if (soFar > problem.Result)
+        {
+            return rslt;
+        }
+
         if (soFar == problem.Result && index == problem.Values.Count - 1)
         {
             return soFar;
